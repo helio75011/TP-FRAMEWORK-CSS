@@ -39,12 +39,6 @@ const UserList = ({ selectedCategory }) => {
 
   return (
     <div className="bg-white shadow rounded-lg p-6">
-        <div className="flex justify-around p-2">
-            <button className={`font-semibold ${selectedCategory === 'salle' ? 'text-orange-500' : 'text-gray-600'}`}>salle</button>
-            <button className={`font-semibold ${selectedCategory === 'cuisine' ? 'text-orange-500' : 'text-gray-600'}`}>cuisine</button>
-            <button className={`font-semibold ${selectedCategory === 'service' ? 'text-orange-500' : 'text-gray-600'}`}>service</button>
-        </div>
-        
         <div className="divide-y divide-gray-300">
             {filteredData.map((item) => (
                 <div key={item.id} className={`flex items-center p-4 ${item.checked ? 'bg-yellow-200' : ''}`}>
