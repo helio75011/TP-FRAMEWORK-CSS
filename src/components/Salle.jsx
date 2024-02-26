@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-// Assurez-vous d'importer tailwind.css correctement.
-import '../index.css';
-import { toggleDarkMode } from'../functions/Darkmode';
+// Make sure to import tailwind.css correctly.
+// import '../index.css';
+import { toggleDarkMode } from '../functions/Darkmode';
 
 function Salle() {
-  // Initialiser l'état des employés
+  // Initialize the state of employees
   const [employees, setEmployees] = useState([
     { id: 1, name: 'Aaron James', selected: false },
     { id: 2, name: 'Amanda Wallace', selected: false },
@@ -14,7 +14,7 @@ function Salle() {
     { id: 6, name: 'Fred Davis', selected: false },
   ]);
 
-  // Fonction pour basculer la sélection d'un employé
+  // Function to toggle the selection of an employee
   const toggleEmployeeSelection = (id) => {
     setEmployees(
       employees.map((employee) =>
@@ -24,12 +24,12 @@ function Salle() {
   };
 
   return (
-    <div className="bg-green-200 max-w-sm mx-auto bg-white dark:bg-gray-800">
-      <div className="text-center p-4 bg-white">
+    <div className="bg-white shadow rounded-lg p-6">
+      <div className="text-center p-4">
         <h2 className="text-lg font-bold">Qui travaille aujourd'hui ?</h2>
       </div>
 
-      <div className="flex justify-around p-2 bg-white">
+      <div className="flex justify-around p-2">
         <button className="font-semibold text-gray-600">salle</button>
         <button className="font-semibold text-gray-600">cuisine</button>
         <button className="font-semibold text-gray-600">service</button>
@@ -39,7 +39,7 @@ function Salle() {
         {employees.map((employee) => (
           <div
             key={employee.id}
-            className={`flex items-center p-4 ${employee.selected ? 'bg-yellow-200' : 'bg-white'}`}
+            className={`flex items-center p-4 ${employee.selected ? 'bg-yellow-200' : ''}`}
           >
             <div className="flex-grow font-medium px-2">{employee.name}</div>
             <input
@@ -57,7 +57,6 @@ function Salle() {
       </div>
       <button onClick={toggleDarkMode}>Basculer le mode sombre</button>
     </div>
-    
   );
 }
 

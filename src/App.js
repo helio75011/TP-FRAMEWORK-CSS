@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
-// Assurez-vous d'importer tailwind.css correctement.
+import React from 'react';
+// import './tailwind.css';
 import Salle from './components/Salle';
+import Cuisine from './components/Cuisine';
 
 function App() {
   return (
-    <Salle></Salle>
+    <div>
+      <Salle />
+      <Cuisine />
+    </div>
   );
 }
 
