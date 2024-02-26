@@ -5,7 +5,7 @@ import CategoryFilter from './components/Categories';
 import Header from './components/Header';
 import Tips from './components/Tips';
 import Delete from './components/Delete';
-
+import AddUser from './components/AddUser';
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState('salle');
@@ -19,6 +19,7 @@ const App = () => {
       <CategoryFilter selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
       <Tips />
       <Delete />
+      <AddUser />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrashIcon } from '@heroicons/react/solid';
+import { IoPersonOutline } from 'react-icons/io5';
 
 const Delete = () => {
     const employees = [
@@ -31,7 +31,7 @@ const Delete = () => {
           <div key={employee} className="flex items-center justify-between">
             <div className="flex items-center">
               <div className="bg-red-100 p-2 rounded-full mr-2">
-                <TrashIcon className="h-5 w-5 text-red-500" />
+                    <IoPersonOutline className="text-red-500 text-xl" />
               </div>
               <span className="font-medium">{employee}</span>
             </div>

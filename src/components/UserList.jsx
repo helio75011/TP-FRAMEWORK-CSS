@@ -42,7 +42,9 @@ const UserList = ({ selectedCategory }) => {
         <div className="divide-y divide-gray-300">
             {filteredData.map((item) => (
                 <div key={item.id} className={`flex items-center p-4 ${item.checked ? 'bg-yellow-200' : ''}`}>
-                    <IoPersonOutline className="text-red-500 text-xl" />
+                    <div className="bg-red-100 p-2 rounded-full mr-2">
+                        <IoPersonOutline className="text-red-500 text-xl" />
+                    </div>
                     <span className="flex-grow font-medium px-2">{item.name}</span>
                     <button onClick={() => toggleCheck(item.id)} className="transform scale-125">
                         {item.checked ? (
