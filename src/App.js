@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import CategoryFilter from './components/Categories';
 import Header from './components/Header';
+import Tips from './components/Tips';
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <h2 className="text-lg font-bold">Qui travaille aujourd'hui ?</h2>
       </div>
       <CategoryFilter selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
+      <Tips />
     </div>
   );
 };
