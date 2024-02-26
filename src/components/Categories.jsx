@@ -2,13 +2,13 @@ import React from 'react';
 import UserList from './UserList';
 
 const CategoryFilter = ({ selectedCategory, setSelectedCategory }) => {
-  const getButtonClass = (category) => {
-    return category === selectedCategory ? 'button-selected' : 'button';
-  };
+//   const getButtonClass = (category) => {
+//     return category === selectedCategory ? 'button-selected' : 'button';
+//   };
 
-  const getTextClass = (category) => {
-    return category === selectedCategory ? 'text-selected' : 'text';
-  };
+//   const getTextClass = (category) => {
+//     return category === selectedCategory ? 'text-selected' : 'text';
+//   };
 
   return (
     <div className="safe-area">
