@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import CategoryFilter from './components/Categories';
 import Header from './components/Header';
 import Tips from './components/Tips';
+import Delete from './components/Delete';
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       </div>
       <CategoryFilter selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
       <Tips />
+      <Delete />
     </div>
   );
 };
