@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Tips from './components/Tips';
 import Delete from './components/Delete';
 import AddUser from './components/AddUser';
+import Admin from './components/Admin';
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState('salle');
@@ -20,6 +21,7 @@ const App = () => {
       <Tips />
       <Delete />
       <AddUser />
+      <Admin />
     </div>
   );
 };
